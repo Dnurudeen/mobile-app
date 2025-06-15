@@ -46,6 +46,16 @@ const Tabslayout = () => {
             headerShown: false,
           }}
         />
+        <Tabs.Screen
+          name="history"
+          options={{
+            title: "History",
+            tabBarIcon(props) {
+              return <TabBarIcon {...props} name="arrow-left" />;
+            },
+            headerShown: false,
+          }}
+        />
       </Tabs>
     </SafeAreaView>
   );
